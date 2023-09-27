@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }
 
     func showShakeAlert() {
-        let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         let resetAction = UIAlertAction(title: "Reset", style: .destructive) { _ in
             self.resetCount()
